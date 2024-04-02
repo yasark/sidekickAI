@@ -1,0 +1,19 @@
+
+- Blob()
+  - Class for loading data from a blob
+- Loader
+  - BaseLoader
+    - def load
+    - def load_and_split
+    - def lazy_load
+  - BlobLoader()
+    - load from a blob()
+  - BasePDFLoader(BaseLoader)
+    - load from pdf
+  - PyPDFLoader (BasePDFLoader)
+    - load from pdf using pypdf library
+- Parser
+  - BaseBlobParser()
+    - Blob: input
+  - PyPDFParser(BaseBlobParser)
+    - Parse from blob using pypdf library

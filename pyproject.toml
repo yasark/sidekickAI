@@ -2,12 +2,21 @@
 name = "sidekickai"
 version = "1.0.0"
 description = "accelerate with LLM"
-authors = ["yasar <yasar.kundottil@gyanai.com>"]
+authors = ["yasar <edu.yasar@gmail.com>"]
 readme = "README.md"
+keywords = ["LLM", "NLP", "RAG", "data", "devtools", "index", "retrieval"]
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8"
+fire = "^0.6.0"
+pydantic = "^2.6.4"
+tenacity = "^8.2.3"
+anthropic = "^0.21.3"
 
+
+[tool.ruff.pydocstyle]
+convention = "google"
 
 [build-system]
 requires = ["poetry-core"]
